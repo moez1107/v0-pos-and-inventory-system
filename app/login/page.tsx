@@ -11,8 +11,8 @@ import { Spinner } from '@/components/ui/spinner';
 import { Package } from 'lucide-react';
 
 export default function LoginPage() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('moezrehman@am.com');
+  const [password, setPassword] = useState('Mezu@1105');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const { login } = useAuth();
@@ -83,9 +83,9 @@ export default function LoginPage() {
             </Button>
           </form>
 
-          <p className="text-xs text-muted-foreground text-center mt-6">
-            Contact administrator for account access
-          </p>
+          <div className="text-xs text-muted-foreground text-center mt-6 space-y-1">
+            <p>Demo: moezrehman@am.com / Mezu@1105</p>
+          </div>
         </CardContent>
       </Card>
     </div>
